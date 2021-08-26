@@ -1,11 +1,12 @@
 import React from 'react'
-import { SideBar, Footer, NavPage } from '../index'
+import { Footer, NavPage } from '../index'
 import { connect } from 'react-redux'
 import { fetchProject } from '../../store'
 import Loader from 'react-loader-spinner'
 import { OverviewImgPlx } from './Plx/OverviewImgPlx'
 import { TechPlx } from './Plx/TechPlx'
 import { StackPlx } from './Plx/StackPlx'
+import { SideBar } from '../SideBar'
 
 const defaultState = {
     navbar: false,
