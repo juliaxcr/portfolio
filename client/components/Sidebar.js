@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link, animateScroll as scroll } from 'react-scroll'
-import Divider from '@material-ui/core/Divider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faCircle,
