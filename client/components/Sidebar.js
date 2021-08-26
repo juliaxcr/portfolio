@@ -1,4 +1,5 @@
 import React from 'react'
+import { withRouter } from 'react-router'
 import { Link, animateScroll as scroll } from 'react-scroll'
 import Divider from '@material-ui/core/Divider'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,7 +9,7 @@ import {
     faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 
-export default class SideBar extends React.Component {
+class SideBar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -88,3 +89,5 @@ export default class SideBar extends React.Component {
         )
     }
 }
+
+export default withRouter(Sidebar)
