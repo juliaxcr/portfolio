@@ -7,7 +7,7 @@ import {
     HomeProjects,
     HomePhotography,
     Footer,
-    Sidebar,
+    SideBar,
 } from '../../components'
 
 //declare and populate initial state
