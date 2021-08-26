@@ -1,21 +1,54 @@
-const { db } = require('./db')
-const PORT = process.env.PORT || 8080
-const app = require('./app')
-const seed = require('../script/seed');
+const path = require('path')
+const express = require('express')
+const morgan = require('morgan')
+const PORT = process.env.PORT || 3000
+const db = require('./db')
 
-const init = async () => {
-  try {
-    if(process.env.SEED === 'true'){
-      await seed();
-    }
-    else {
-      await db.sync()
-    }
-    // start listening (and create a 'server' object representing our server)
-    app.listen(PORT, () => console.log(`Mixing it up on port ${PORT}`))
-  } catch (ex) {
-    console.log(ex)
+const app = express()
+module.exports = app
+
+//logging middleware
+app.use(morgan('dev'))
+
+// body parsing middleware
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
+
+app.use('/api', require('./api'))
+
+// static file-serving middleware
+app.use(express.static(path.join(__dirname, '../public')))
+
+// any remaining requests with an extension (.js, .css, etc.) send 404
+app.use((req, res, next) => {
+  if (path.extname(req.path).length) {
+    const err = new Error('Not found')
+    err.status = 404
+    next(err)
+  } else {
+    next()
   }
-}
+})
 
+// sends index.html
+app.use('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public/index.html'))
+})
+
+// error handling endware
+app.use((err, req, res, next) => {
+  console.error(err)
+  console.error(err.stack)
+  res.status(err.status || 500).send(err.message || 'Internal server error.')
+})
+
+async function init() {
+  //sync the database
+  await db.sync()
+  // start listening to our app
+  app.listen(PORT, () => {
+    console.log(`Mixing it up on localhost:${PORT}`)
+  })
+}
+//call init
 init()
