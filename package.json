@@ -3,6 +3,10 @@
 	"version": "2.0.0",
 	"description": "Julia's portfolio website",
 	"main": "index.js",
+	"engines": {
+		"node": ">=16.0.0",
+		"npm": ">=7.10.0"
+	},
 	"scripts": {
 		"build": "webpack",
 		"build:dev": "npm run build -- --watch --mode=development",
