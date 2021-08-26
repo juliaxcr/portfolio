@@ -4,8 +4,8 @@
 	"description": "Julia's portfolio website",
 	"main": "index.js",
 	"engines": {
-		"node": ">=16.0.0",
-		"npm": ">=7.10.0"
+		"node": "16.1.0",
+		"npm": "7.11.2"
 	},
 	"scripts": {
 		"build": "webpack",
