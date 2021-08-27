@@ -1,7 +1,7 @@
 import React from 'react'
 import { CaretRightOutlined } from '@ant-design/icons'
-import { NavPage, Footer } from './index'
-import { SideBar } from './SideBar'
+import { NavPage, Footer, SideBar } from './index'
+// import { SideBar } from './SideBar'
 
 //declare and populate initial state
 const defaultState = {
