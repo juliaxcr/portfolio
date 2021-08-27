@@ -1,6 +1,5 @@
 import React from 'react'
-import { NavPage, SingleProject, Footer } from '../index'
-import { SideBar } from '../SideBar'
+import { NavPage, SingleProject, Footer, SideBar } from '../index'
 
 const defaultState = {
     navbar: false,

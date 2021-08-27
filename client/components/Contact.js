@@ -1,9 +1,8 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { sendMessage } from '../store'
-import { NavPage, Footer } from './index'
+import { NavPage, Footer, SideBar } from './index'
 import { SwapRightOutlined } from '@ant-design/icons'
-import { SideBar } from './SideBar'
 
 const defaultState = {
     name: '',

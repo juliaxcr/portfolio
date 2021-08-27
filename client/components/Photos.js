@@ -1,7 +1,6 @@
 import React from 'react'
-import { NavPage, Footer } from './index'
+import { NavPage, Footer, SideBar } from './index'
 import simpleParallax from 'simple-parallax-js'
-import { SideBar } from './SideBar'
 
 //declare and populate initial state
 const defaultState = {

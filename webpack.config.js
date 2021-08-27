@@ -5,7 +5,7 @@ module.exports = {
   // mode: 'development',
   entry: [
     '@babel/polyfill', // enables async-await
-    './client/App.js',
+    './client/index.js',
   ],
   output: {
     path: __dirname,
