@@ -56,7 +56,6 @@
 		"debug": "^4.3.2",
 		"express": "^4.17.1",
 		"file-loader": "^6.2.0",
-		"fsevents": "^1.2.13",
 		"history": "^4.9.0",
 		"jsonwebtoken": "^8.5.1",
 		"lodash.throttle": "^4.1.1",
