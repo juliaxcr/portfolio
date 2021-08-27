@@ -1,7 +1,6 @@
 const Sequelize = require('sequelize')
 const databaseName = 'portfolio'
 
-
 const config = {
     logging: false
 };
