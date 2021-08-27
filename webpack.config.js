@@ -12,7 +12,7 @@ module.exports = {
     filename: './public/bundle.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   devtool: 'source-map',
   watchOptions: {
@@ -22,14 +22,14 @@ module.exports = {
     rules: [
       {
         test: /\.jsx?$/,
+
         exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
-          presets: [
-            '@babel/preset-react'
-          ]
-        }
+          presets: ['@babel/preset-react'],
+        },
       },
+      { test: /\.tsx?$/, loader: 'ts-loader' },
       {
         test: /\.(sass|scss|css)$/,
         use: ['style-loader', 'css-loader', 'sass-loader'],
