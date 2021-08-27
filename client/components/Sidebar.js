@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, animateScroll as scroll } from 'react-scroll'
+import { Link } from 'react-scroll'
+// imported animateScroll as scroll also from above
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
     faCircle,
@@ -7,7 +8,7 @@ import {
     faTimes,
 } from '@fortawesome/free-solid-svg-icons'
 
-export default class SideBar extends React.Component {
+export class SideBar extends React.Component {
     constructor(props) {
         super(props)
         this.state = {
