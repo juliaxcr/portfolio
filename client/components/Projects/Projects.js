@@ -28,8 +28,8 @@ export default class Projects extends React.Component {
                     ) : (
                         <div id='projects-container'>
                             <SingleProject projectName='You-Rock' />
-                            {/* <SingleProject projectName='project 2' /> */}
-                            {/* <SingleProject projectName='What-da-Duck' /> */}
+                            <SingleProject projectName='Form-Motion' />
+                            <SingleProject projectName='Columbia-Buy-Sell-Trade' />
                         </div>
                     )}
                     <SideBar

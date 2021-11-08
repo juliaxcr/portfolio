@@ -105,10 +105,10 @@ export default class About extends React.Component {
                                             <CaretRightOutlined />
                                             Python
                                         </li>
-                                        <li>
-                                            <CaretRightOutlined />
+                                        {/* <li> */}
+                                        {/* <CaretRightOutlined />
                                             Java
-                                        </li>
+                                        </li> */}
                                         <li>
                                             <CaretRightOutlined />
                                             React
@@ -125,10 +125,10 @@ export default class About extends React.Component {
                                             <CaretRightOutlined />
                                             Express.js
                                         </li>
-                                        {/* <li>
-											<CaretRightOutlined />
-											Passport.js
-										</li> */}
+                                        <li>
+                                            <CaretRightOutlined />
+                                            Expo
+                                        </li>
                                         <li>
                                             <CaretRightOutlined />
                                             Sequelize
@@ -175,13 +175,21 @@ export default class About extends React.Component {
                                             <CaretRightOutlined />
                                             Heroku
                                         </li>
-                                        {/* <li>
-											<CaretRightOutlined />
-											Travis
-										</li> */}
+                                        <li>
+                                            <CaretRightOutlined />
+                                            React Native
+                                        </li>
                                         <li>
                                             <CaretRightOutlined />
                                             Phaser
+                                        </li>
+                                        <li>
+                                            <CaretRightOutlined />
+                                            Android Studio
+                                        </li>
+                                        <li>
+                                            <CaretRightOutlined />
+                                            Firebase
                                         </li>
                                     </ul>
                                 </div>
