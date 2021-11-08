@@ -10,7 +10,7 @@ const projects = [
         heroku: 'https://you-rock.herokuapp.com/',
         github: 'https://github.com/Grace-Shopper-We-Rock/We-Rock',
         longContent:
-            'You Rock is an eCommerce site that allows visitors to browse and purchase emotional support pet rocks.',
+            'You Rock is an e-commerce site that allows visitors to browse and purchase emotional support pet rocks.',
         date: '2021',
         tech: ['Node.js', 'React', 'Redux', 'Express', 'Postgres', 'Material-UI'],
         imgOverview: '/images/projects/youRock/youRock1.png',
@@ -40,7 +40,7 @@ const projects = [
     {
         name: 'Columbia-Buy-Sell-Trade',
         shortContent:
-            'A mobile eCommerce marketplace app that allows Columbia students to buy, sell, and trade their personal belongings.',
+            'A mobile marketplace app that allows Columbia students to buy, sell, and trade their personal belongings.',
         // heroku: '',
         github: 'https://github.com/juliaxcr/columbia-buy-sell-trade',
         longContent:
