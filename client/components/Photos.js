@@ -7,7 +7,6 @@ const defaultState = {
     navbar: false,
     sections: [],
 }
-
 export default class Photos extends React.Component {
     constructor() {
         super()
@@ -57,20 +56,20 @@ export default class Photos extends React.Component {
                             </div>
                             <img className='plx' src='/images/fence.png' />
                             <div id='fourth-row'>
-                                <img className='fourth-row' src='/images/picking.jpeg' />
-                                <img className='fourth-row' src='/images/breakfast.jpeg' />
+                                <img className='fourth-row' src='/images/picking.png' />
+                                <img className='fourth-row' src='/images/breakfast.png' />
                             </div>
                             <div id='fifth-row'>
-                                <img className='fifth-row' src='/images/eyck.jpeg' />
-                                <img className='fifth-row' src='/images/birches.jpeg' />
+                                <img className='fifth-row' src='/images/eyck.png' />
+                                <img className='fifth-row' src='/images/birches.png' />
                                 <img
                                     className='fifth-row'
                                     id='right'
-                                    src='/images/squash.jpeg'
+                                    src='/images/squash.png'
                                 />
                             </div>
                             {/* <img className="plx" id="large" src="/images/photos/12.jpeg"/> */}
-                            <img className='last' src='/images/leaves.jpeg' />
+                            <img className='last' src='/images/leaves.png' />
                         </div>
                         <Footer />
                     </div>
