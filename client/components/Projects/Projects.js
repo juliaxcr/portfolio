@@ -38,9 +38,9 @@ export default class Projects extends React.Component {
                             <div id="single-project">
                                 <div id="single-project-top">
                                     <div id="folder-logo">
-                                        <Link to={`/projects/$You-Rock`}>
-                                            <FontAwesomeIcon icon={faFolderOpen} className="single-proj-fa" />
-                                        </Link>
+                                        {/* <Link to={`/projects/$You-Rock`}> */}
+                                        <FontAwesomeIcon icon={faFolderOpen} className="single-proj-fa" />
+                                        {/* </Link> */}
                                     </div>
                                     <div id="social-media-logo">
                                         <a href='https://github.com/Grace-Shopper-We-Rock/We-Rock' target="_blank">
@@ -59,9 +59,9 @@ export default class Projects extends React.Component {
                             <div id="single-project">
                                 <div id="single-project-top">
                                     <div id="folder-logo">
-                                        <Link to={`/projects/Form-Motion`}>
-                                            <FontAwesomeIcon icon={faFolderOpen} className="single-proj-fa" />
-                                        </Link>
+                                        {/* <Link to={`/projects/Form-Motion`}> */}
+                                        <FontAwesomeIcon icon={faFolderOpen} className="single-proj-fa" />
+                                        {/* </Link> */}
                                     </div>
                                     <div id="social-media-logo">
                                         <a href='https://github.com/FormMotion/FormMotion' target="_blank">
@@ -80,15 +80,15 @@ export default class Projects extends React.Component {
                             <div id="single-project">
                                 <div id="single-project-top">
                                     <div id="folder-logo">
-                                        <Link to={`/projects/Columbia-Buy-Sell-Trade`}>
-                                            <FontAwesomeIcon icon={faFolderOpen} className="single-proj-fa" />
-                                        </Link>
+                                        {/* <Link to={`/projects/Columbia-Buy-Sell-Trade`}> */}
+                                        <FontAwesomeIcon icon={faFolderOpen} className="single-proj-fa" />
+                                        {/* </Link> */}
                                     </div>
                                     <div id="social-media-logo">
                                         <a href='https://github.com/juliaxcr/columbia-buy-sell-trade' target="_blank">
                                             <FontAwesomeIcon icon={faGithub} className="single-proj-smaller-fa" />
                                         </a>
-                                        <a href={ } target="_blank">
+                                        <a href={''} target="_blank">
                                             <FontAwesomeIcon icon={faExpandAlt} className="single-proj-smaller-fa" />
                                         </a>
                                     </div>
