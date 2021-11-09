@@ -1,9 +1,9 @@
 import React from 'react'
-import { NavPage, SideBar, SingleProject, Footer } from '../index'
+import { NavPage, SingleProject, Footer, SideBar } from '../index'
 
 const defaultState = {
     navbar: false,
-    sections: []
+    sections: [],
 }
 
 export default class Projects extends React.Component {
@@ -14,26 +14,33 @@ export default class Projects extends React.Component {
     }
 
     handleClick() {
-        const prevState = this.state.navbar;
+        const prevState = this.state.navbar
         this.setState({
-            navbar: !prevState
+            navbar: !prevState,
         })
     }
     render() {
         return (
-            <div id="projects-outer-parent">
-                <div id="projects-outer-container">
-                    {this.state.navbar ? <NavPage handleClick={this.handleClick} /> :
-                        <div id="projects-container">
-                            <SingleProject projectName="coLab" />
-                            <SingleProject projectName="Q-Party" />
-                            <SingleProject projectName="What-da-Duck" />
-                        </div>}
-                    <SideBar navbar={this.state.navbar} sections={this.state.sections} handleClick={this.handleClick} />
+            <div id='projects-outer-parent'>
+                <div id='projects-outer-container'>
+                    {this.state.navbar ? (
+                        <NavPage handleClick={this.handleClick} />
+                    ) : (
+                        <div id='projects-container'>
+                            <SingleProject projectName='You-Rock' />
+                            <SingleProject projectName='Form-Motion' />
+                            <SingleProject projectName='Columbia-Buy-Sell-Trade' />
+                        </div>
+                    )}
+                    <SideBar
+                        navbar={this.state.navbar}
+                        sections={this.state.sections}
+                        handleClick={this.handleClick}
+                    />
                 </div>
                 <Footer />
             </div>
         )
     }
-
 }
+

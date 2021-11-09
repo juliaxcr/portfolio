@@ -13,15 +13,18 @@ class SingleProject extends React.Component {
         super(props)
     }
 
-    componentDidMount() {
+    componentWillMount() {
         this.props.fetchAllProjects()
     }
 
     render() {
+        // problematic code
         if (this.props.projectsLoading) return <div id="spinner"><Loader type="TailSpin" color="#294c60" height={50} width={50} /></div>
-        const project = this.props.projects.filter(project => (
-            project.name === this.props.projectName
-        ))[0]
+        else {
+            const project = this.props.projects.filter(project => (
+                project.name === this.props.projectName
+            ))[0]
+        }
         return (
             <div id="single-project">
                 <div id="single-project-top">
