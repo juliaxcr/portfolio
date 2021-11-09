@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Link } from 'react-router-dom'
 import { fetchAllProjects } from '../../store'
 import { connect } from 'react-redux'
@@ -8,9 +8,8 @@ import { faFolderOpen, faExpandAlt } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 
 
-class SingleProject extends React.Component {
-    constructor(props) {
-        super(props)
+function SingleProject() {
+    const [project, setProject] = useState('')
         this.state = {
             project: {}
         }
