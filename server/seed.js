@@ -1,4 +1,4 @@
-'use strict'
+// 'use strict'
 const db = require('./db')
 const Project = require('./models/projects')
 
@@ -41,7 +41,7 @@ const projects = [
         name: 'Columbia-Buy-Sell-Trade',
         shortContent:
             'A mobile marketplace app that allows Columbia students to buy, sell, and trade their personal belongings.',
-        // heroku: '',
+        heroku: '',
         github: 'https://github.com/juliaxcr/columbia-buy-sell-trade',
         longContent:
             'The Columbia-Buy-Sell-Trade app allows Columbia students to buy, sell, and trade their personal belongings to their fellow classmates. On the app, users have access to all the items that other users are selling and can contact each seller through a chat window. Users are also able to upload items they would like to sell or trade by using the camera and image picker feature in the app.',
