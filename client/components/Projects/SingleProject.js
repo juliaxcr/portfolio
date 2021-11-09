@@ -32,6 +32,7 @@ class SingleProject extends React.Component {
         //         project.name === this.props.projectName
         //     ))[0]
         // }
+        console.log(this.state.project)
         return (
             <div id="single-project">
                 <div id="single-project-top">
