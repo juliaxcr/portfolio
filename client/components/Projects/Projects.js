@@ -88,9 +88,9 @@ export default class Projects extends React.Component {
                                         <a href='https://github.com/juliaxcr/columbia-buy-sell-trade' target="_blank">
                                             <FontAwesomeIcon icon={faGithub} className="single-proj-smaller-fa" />
                                         </a>
-                                        {/* <a href={this.state.project.heroku} target="_blank">
+                                        <a href={ } target="_blank">
                                             <FontAwesomeIcon icon={faExpandAlt} className="single-proj-smaller-fa" />
-                                        </a> */}
+                                        </a>
                                     </div>
                                 </div>
                                 <div id="single-project-content">
